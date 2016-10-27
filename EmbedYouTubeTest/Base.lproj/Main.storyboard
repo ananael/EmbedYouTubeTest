@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6w-oO-Hxd" customClass="YTPlayerView">
+                                <color key="backgroundColor" red="0.72190296490000005" green="1" blue="0.92292909349999996" alpha="0.45167025859999999" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEr-6T-P0w">
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.80392156859999997" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtc-UE-hP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y58-uI-V3y">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12D-Qr-80a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1Z-xY-Ctp">
+                                <color key="backgroundColor" red="1" green="0.61407846210000006" blue="0.17443066839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                <state key="normal" title="PAUSE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Oc-Zq-4lI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYv-mx-aFN">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="oFo-Qa-MUC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iq3-ro-upf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcl-5G-AUw">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="ibv-Re-FkW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                <state key="normal" title="PREV">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHw-nf-caQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E1Z-xY-Ctp" firstAttribute="baseline" secondItem="Y58-uI-V3y" secondAttribute="baseline" id="4aJ-CS-Pmu"/>
+                            <constraint firstItem="Dcl-5G-AUw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="78" id="A8G-6i-PgD"/>
+                            <constraint firstItem="E1Z-xY-Ctp" firstAttribute="height" secondItem="hEr-6T-P0w" secondAttribute="height" id="CTk-FP-r75"/>
+                            <constraint firstItem="o6w-oO-Hxd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="90" id="DW8-bp-CKf"/>
+                            <constraint firstItem="o6w-oO-Hxd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.853" id="Ik3-Og-npb"/>
+                            <constraint firstItem="Dcl-5G-AUw" firstAttribute="baseline" secondItem="mYv-mx-aFN" secondAttribute="baseline" id="NkK-V1-wxF"/>
+                            <constraint firstItem="hEr-6T-P0w" firstAttribute="leading" secondItem="o6w-oO-Hxd" secondAttribute="leading" id="Rqz-yu-4kG"/>
+                            <constraint firstItem="E1Z-xY-Ctp" firstAttribute="width" secondItem="hEr-6T-P0w" secondAttribute="width" id="VeU-Af-5xw"/>
+                            <constraint firstItem="Y58-uI-V3y" firstAttribute="leading" secondItem="E1Z-xY-Ctp" secondAttribute="trailing" constant="89" id="awn-Xx-31p"/>
+                            <constraint firstItem="hEr-6T-P0w" firstAttribute="baseline" secondItem="E1Z-xY-Ctp" secondAttribute="baseline" id="fgO-qW-Cjc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dcl-5G-AUw" secondAttribute="bottom" constant="46" id="hJs-lX-yMY"/>
+                            <constraint firstItem="Y58-uI-V3y" firstAttribute="width" secondItem="hEr-6T-P0w" secondAttribute="width" id="hi9-6b-Q8i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mYv-mx-aFN" secondAttribute="trailing" constant="70" id="m6y-Zy-Iiy"/>
+                            <constraint firstItem="o6w-oO-Hxd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.27" id="ofX-yM-47f"/>
+                            <constraint firstItem="E1Z-xY-Ctp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ox5-fj-XJa"/>
+                            <constraint firstItem="hEr-6T-P0w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.122" id="qGT-Bi-Bxw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hEr-6T-P0w" secondAttribute="bottom" constant="106" id="tmI-TL-WiY"/>
+                            <constraint firstItem="Y58-uI-V3y" firstAttribute="height" secondItem="hEr-6T-P0w" secondAttribute="height" id="xKO-xR-jBn"/>
+                            <constraint firstItem="o6w-oO-Hxd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zGV-mf-n1O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextVideo" destination="mYv-mx-aFN" id="ioY-f6-C1d"/>
+                        <outlet property="pauseVideo" destination="E1Z-xY-Ctp" id="m6h-4J-Qjw"/>
+                        <outlet property="playVideo" destination="hEr-6T-P0w" id="BR7-ar-q7W"/>
+                        <outlet property="playerView" destination="o6w-oO-Hxd" id="bTh-KD-wLQ"/>
+                        <outlet property="previousVideo" destination="Dcl-5G-AUw" id="Ns8-DX-Ti6"/>
+                        <outlet property="stopVideo" destination="Y58-uI-V3y" id="dfq-ff-ZlI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
